@@ -4,7 +4,7 @@ include('../HttpStatusCode.php');
 include('../../db.php');
 require('../mysqlilib.php');
 
-$db['AS'] = new StockDB('localhost', 'alan9130314', 'zxc9130314', 'ig_demo', '3306');
+$db['AS'] = new StockDB("$db[host]", "$db[username]", "$db[password]", "$db[dbname]", "$db[port]");
 
 // try{
 //     $pdo = new PDO("mysql:host=$db[host];dbname=$db[dbname];port:$db[port];charset=$db[charset]",

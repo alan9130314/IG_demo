@@ -10,7 +10,7 @@ $name = $_POST['name'];
 $content = $_POST['content'];
 $time = $_POST['time'];
 
-$db['AS'] = new StockDB('localhost', 'alan9130314', 'zxc9130314', 'ig_demo', '3306');
+$db['AS'] = new StockDB("$db[host]", "$db[username]", "$db[password]", "$db[dbname]", "$db[port]");
 
 $sql = "INSERT INTO comments(post_id,`name`,content,`time`)
         VALUES('$post_id','$name','$content','$time')";

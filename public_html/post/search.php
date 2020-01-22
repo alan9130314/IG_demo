@@ -6,7 +6,7 @@ require('../mysqlilib.php');
 $search = filter_var($_POST['search'], FILTER_SANITIZE_STRING);
 
 
-$db['AS'] = new StockDB('localhost', 'alan9130314', 'zxc9130314', 'ig_demo', '3306');
+$db['AS'] = new StockDB("$db[host]", "$db[username]", "$db[password]", "$db[dbname]", "$db[port]");
 
 $qstr = "SELECT p.*,m.* 
         FROM `posts` p  

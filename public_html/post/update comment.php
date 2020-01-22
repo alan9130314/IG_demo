@@ -9,7 +9,7 @@ $comment_id = $_POST['comment_id'];
 $content = $_POST['content'];
 
 
-$db['AS'] = new StockDB('localhost', 'alan9130314', 'zxc9130314', 'ig_demo', '3306');
+$db['AS'] = new StockDB("$db[host]", "$db[username]", "$db[password]", "$db[dbname]", "$db[port]");
 
 $sql = "UPDATE comments SET content='$content'
         WHERE comment_id='$comment_id'";

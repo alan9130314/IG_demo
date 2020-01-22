@@ -7,7 +7,7 @@ require('../mysqlilib.php');
 
 $post_id = $_POST['post_id'];
 
-$db['AS'] = new StockDB('localhost', 'alan9130314', 'zxc9130314', 'ig_demo', '3306');
+$db['AS'] = new StockDB("$db[host]", "$db[username]", "$db[password]", "$db[dbname]", "$db[port]");
 
 $sql = "DELETE FROM comments WHERE comments.post_id = '$post_id'";
 $sql2 = "DELETE FROM posts WHERE posts.post_id = '$post_id'";

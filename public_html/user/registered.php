@@ -20,7 +20,7 @@ $account = filter_var($_POST['account'], FILTER_SANITIZE_STRING);
 $password = filter_var($_POST['password'], FILTER_SANITIZE_STRING);
 
 
-$db['AS'] = new StockDB('localhost', 'alan9130314', 'zxc9130314', 'ig_demo', '3306');
+$db['AS'] = new StockDB("$db[host]", "$db[username]", "$db[password]", "$db[dbname]", "$db[port]");
 
 $sql = "INSERT INTO members(account,`password`)
         VALUES ('$account','$password')";

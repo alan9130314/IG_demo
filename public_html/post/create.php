@@ -18,7 +18,7 @@ $content = $_POST['content'];
 $member_id = $_POST['member_id'];
 // $member_id = filter_var($_POST['member_id'], FILTER_VALIDATE_INT);
 
-$db['AS'] = new StockDB('localhost', 'alan9130314', 'zxc9130314', 'ig_demo', '3306');
+$db['AS'] = new StockDB("$db[host]", "$db[username]", "$db[password]", "$db[dbname]", "$db[port]");
 
 $sql = "INSERT INTO posts(img,content,member_id)
         VALUES('$img','$content','$member_id')";

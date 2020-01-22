@@ -8,7 +8,7 @@ require('../mysqlilib.php');
 $comment_post_id = filter_var($_POST['comment_post_id'], FILTER_VALIDATE_INT);
 
 
-$db['AS'] = new StockDB('localhost', 'alan9130314', 'zxc9130314', 'ig_demo', '3306');
+$db['AS'] = new StockDB("$db[host]", "$db[username]", "$db[password]", "$db[dbname]", "$db[port]");
 
 $sql = "UPDATE posts SET img='$img', content='$content'
         WHERE post_id='$post_id'";

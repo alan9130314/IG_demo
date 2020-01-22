@@ -13,7 +13,7 @@ require('class_page.php');
 // }
 
 
-$db['AS'] = new StockDB('localhost', 'alan9130314', 'zxc9130314', 'ig_demo', '3306');
+$db['AS'] = new StockDB("$db[host]", "$db[username]", "$db[password]", "$db[dbname]", "$db[port]");
 
 // $qstr = 'SELECT posts.post_id , posts.content,posts.img,members.account
 //         FROM posts,members 
@@ -36,7 +36,7 @@ while ($db['AS']->next_record()) {
 
 
 
-$db['WS'] = new StockDB('localhost', 'alan9130314', 'zxc9130314', 'ig_demo', '3306');
+$db['WS'] = new StockDB("$db[host]", "$db[username]", "$db[password]", "$db[dbname]", "$db[port]");
 
 $_REQUEST['page'] = 1;
 $sql_column="posts.post_id , posts.content,posts.img,members.account";
