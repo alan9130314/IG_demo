@@ -1,0 +1,307 @@
+#ig {
+    min-height: 100%;
+    position: relative;
+    text-transform: unset;
+    font-family: monospace;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+#ig nav.navbar {
+    background-color: #ffffff;
+    text-transform: unset;
+    margin-bottom: 1.5rem;
+
+}
+.narbar .container{
+    position: relative;
+}
+.navbar-brand{
+    font-weight: bold;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+input.search{
+    width: auto;
+    margin: 0 auto;
+    flex-grow: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttons button.btn{
+    width: 3rem;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #c7c7c780;
+    border-color: #c7c7c780;
+}
+
+
+.searchResult{
+    display: none;
+
+}
+.searchResult.show{
+    display: block;
+    position: relative;
+    top: 50vh;
+    transform: translate(0,-50%);
+    font-size: 1.5rem;
+    text-align: center;
+}
+form {
+    margin-block-end: 0;
+}
+
+nav .buttons button {
+    text-transform: capitalize;
+}
+
+.account .ac {
+    margin-right: .5rem;
+    font-weight: bold;
+}
+
+#board {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#board .post {
+    border: 1px solid rgb(214, 214, 214);
+    padding: 1.5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    background: rgb(255, 255, 255);
+    
+    
+}
+/* .posts .post:nth-child(2) {
+    margin-top: 5rem;
+} */
+
+.picture img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.post .contents {
+    display: flex;
+    margin-bottom: .5rem;
+    text-transform: unset;
+}
+
+.contents .account {
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.post .content .account {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.post .leaveComment input.comment-content::placeholder {
+    font-size: .8rem;
+    opacity: .5;
+    font-weight: 100;
+}
+
+
+.comments {
+    display: flex;
+    margin-bottom: .5rem;
+    align-items: flex-start;
+}
+
+.comments .name {
+    margin-right: 1rem;
+    font-weight: 500;
+}
+.comments .comment{
+    width: 100%;
+    white-space: pre;
+}
+.comments .time {
+    font-size: .6rem;
+    opacity: .5;
+}
+
+.comments i{
+    font-size: .6rem;
+}
+
+.comments .edit {
+    display: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.comments .edit.show {
+    display: block;
+    opacity: .1;
+}
+
+
+.comments .edit.show:hover {
+    color: rgb(53, 77, 156);
+    opacity: 1;
+}
+
+.comments .delete {
+    display: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.comments .delete.show {
+    display: block;
+    opacity: .1;
+}
+
+.comments .delete.show:hover {
+    color: rgb(156, 53, 53);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+#login .container {
+    /* position: relative; */
+
+}
+
+
+#login form,
+#signUp form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* margin: 0 auto; */
+    width: 300px;
+    text-transform: capitalize;
+    transform: translate(-50%,-50%);
+    
+}
+
+#login input,
+#signUp input {
+    margin-bottom: 1rem;
+}
+
+#login .buttons,
+#signUp .buttons {
+    text-align: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+#login a,
+#login button,
+#signUp a,
+#signUp button {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.error-msg {
+    display: none;
+}
+
+.error-msg.open {
+    display: block;
+}
+
+.error-msg .alert {
+    text-transform: initial;
+}
+
+/*post panel*/
+
+#post-panel {
+    z-index: 99;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 30%;
+    border: 1px solid rgb(207, 207, 207);
+    padding: 1rem;
+}
+
+#post-panel.open {
+    display: block;
+}
+
+
+.close {
+    margin-bottom: 1rem;
+}
+
+form .account {
+    font-size: 2rem;
+    color: rgb(20, 64, 160);
+}
+
+#signUp form .account {
+    font-size: 1rem;
+    font-weight: normal;
+    color: unset;
+}
+
+#login form .account {
+    font-size: 1rem;
+    font-weight: normal;
+    color: unset;
+
+}
+
+form textarea {
+    width: 100%;
+    resize: none;
+    margin-bottom: 1rem;
+}
+
+.panel-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.panel-buttons button {
+    width: 50%;
+    display: none;
+
+}
+
+
+#post-panel.new button.create,
+#post-panel.new button.cancel {
+    display: block;
+    text-transform: uppercase;
+}
+
+#post-panel.update button.update,
+#post-panel.update button.delete {
+    display: block;
+    text-transform: uppercase;
+}
