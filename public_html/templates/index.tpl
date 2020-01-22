@@ -5,7 +5,7 @@
 
 
 <div id="ig">
-    <nav class="navbar navbar-light shadow-sm ">
+    <nav class="navbar navbar-light shadow-sm sticky-top">
         <div class="container">
             <a href="index.php" class="navbar-brand">Instagram</a>
 
