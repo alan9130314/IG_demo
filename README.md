@@ -4,7 +4,7 @@
 使用者也可於其他使用者的貼文下方進行貼文評論，也可編輯或刪除。              
 貼文擁有者可透過user_id辨識是否為擁有者，並擁有刪除其他使用者的評論功能。   
     
-所運用的技術      
+所使用的技術	
 前端:AJAX、HTML、CSS、JS、JQuery、Boostrap、Smarty   
 後端:PHP、MySQL(CRUD)、API製作串接、Database函式庫         
 其他:Git、MySQL Workbench
