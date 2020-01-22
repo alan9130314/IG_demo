@@ -6,8 +6,6 @@ require('../class_page.php');
 
 
 $db['WS'] = new StockDB("$db[host]", "$db[username]", "$db[password]", "$db[dbname]", "$db[port]");
-// $db['WS'] = new StockDB('localhost', 'alan9130314', 'zxc9130314', 'ig_demo', '3306');
-
 
 
 $sql_column="posts.post_id , posts.content,posts.img,members.account";
